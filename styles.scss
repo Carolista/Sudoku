@@ -1,0 +1,104 @@
+$darkest-grey: #222;
+$darker-grey: #373636;
+$dark-grey: #555555;
+$medium-grey: #777;
+$light-grey: #aaa;
+$off-white: #eee;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $off-white;
+    background-color: $darkest-grey;
+    display: flex;
+    flex-direction: column;
+    font-size: 10pt;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+div {
+    display: flex;
+}
+
+input {
+    color: $off-white;
+    font-size: 26px;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    display: none; /* use JS to show only one at a time */
+}
+
+#full-grid {
+    flex-direction: column;
+    background-color: $darker-grey;
+    row-gap: 8px;
+    width: 332px;
+    height: 332px;
+    padding: 8px;
+}
+
+.grid-row {
+    flex-direction: row;
+    column-gap: 8px;
+    width: 332px;
+    height: 100px;
+}
+
+.nine-square {
+    flex-direction: column;
+    row-gap: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.square-row {
+    flex-direction: row;
+    column-gap: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+.single-square {
+    flex-direction: column;
+    font-size: 26px;
+    background-color: $dark-grey;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $dark-grey;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+.single-square:hover {
+    background-color: $medium-grey;
+    border: 1px solid $light-grey;
+}
